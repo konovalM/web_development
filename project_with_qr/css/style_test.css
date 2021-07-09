@@ -1,0 +1,142 @@
+@import url('style.css');
+
+section.main{
+    min-height: 511px;
+    background-color: #405978;
+    width: 295px;
+    margin: 0 auto;
+    padding: 40px 0 46px;
+}
+.your_result{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    letter-spacing: 0.045em;
+
+    color: #F9E3EF;
+    text-align: center;
+}
+.container_ans{
+    height: 136px;
+    margin-top: 33px;
+    position: relative;
+}
+.points{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 35px;
+    text-align: center;
+    letter-spacing: 0.045em;
+    color: #F9E3EF;
+}
+.correct_ans{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    letter-spacing: 0.045em;
+    color: #F9E3EF;
+    margin-top: 18px;
+}
+img.left_star{
+    position: absolute;
+    left: 18px;
+    top: 26px;
+}
+
+img.left_heart{
+    position: absolute;
+    left: 24px;
+    top: 28px;
+}
+img.left_think{
+    position: absolute;
+    left: 24px;
+    top: 28px;
+}
+
+img.right_star{
+    position: absolute;
+    right: 18px;
+    top: 18px;
+}
+
+img.right_heart{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+img.right_think{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
+img.center_emoji{
+    position: absolute;
+    display: block;
+    left: 131px;
+    top: 103px;
+}
+.text_result_1{
+    margin-top: 30px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+    letter-spacing: 0.045em;
+
+    color: #F9E3EF;
+}
+.text_result_2{
+    margin-top: 24px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+    letter-spacing: 0.045em;
+
+    color: #F9E3EF;
+}
+.social_links{
+    width: 200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 23px;
+    
+}
+.social_links_img{
+    width: 50px;
+    height: 50px;
+}
+.btn_result_retry{
+    display: block;
+    margin: 0 auto;
+    margin-top: 27.5px;
+
+    width: 90px;
+	height: 25px;
+    background-color: #405978;
+	border-radius: 15px;
+	border: 2px solid rgba(249, 227, 239, 0.6);
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 10px;
+	line-height: 12px;
+	letter-spacing: 0.045em;
+	color: rgba(249, 227, 239, 0.6);
+}
