@@ -1,0 +1,23 @@
+*{
+    box-sizing: border-box;
+}
+.main{
+    display: flex;
+    justify-content: center;
+    margin-top: 500px;
+    margin: 0 auto;
+    &__block{
+        width: 300px;
+        padding: 20px;
+        margin: 0 5px;
+        &_white{
+            background-color: rgb(109, 104, 104);
+        }
+        &_blue{
+            background-color: blue;
+        }
+        &_red{
+            background-color: red;
+        }
+    }
+}

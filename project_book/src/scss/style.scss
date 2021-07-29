@@ -1,0 +1,46 @@
+.header{
+    min-height: 200px;
+    background-color: rgb(39, 34, 34);
+    padding-left: 20px;
+    display: flex;
+    align-items: center;
+    h1{
+        font-size: 40px;
+        color: blanchedalmond;
+        margin-bottom: 0px;
+    }
+}
+.section{
+    background-color: rgb(199, 179, 149);
+    padding: 40px 20px;
+    min-height: 280px;
+    .flex{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .social{
+            display: flex;
+            flex-direction: column;
+            
+            &__link{
+                display: inline-block;
+                background-color: brown;
+                margin-bottom: 10px;
+                text-align: center;
+                padding: 7px 10px;
+                color: wheat;
+            }
+            .sponsor{
+                display: inline-block;
+                color: black;
+            }
+            :link{
+                text-decoration: none;
+            }
+            :hover{
+                color: red;
+            }
+        }
+    }
+
+}

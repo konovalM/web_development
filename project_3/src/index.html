@@ -26,7 +26,7 @@
                 </div>
                 <div class="header__contact">
                     <a href="tel:+74999228974" class="header__phone">+7 (499) 922-89-74</a>
-                    <button class="button">заказать звонок</button>
+                    <button data-modal="consultation" class="button">заказать звонок</button>
                 </div>
             </header>
             <div class="promo__wrapper">
@@ -46,7 +46,7 @@
                         <div class="promo__text">Ответим на все вопросы</div>
                     </div>
                 </div>
-                <button class="button button__header">заказать кОНСУЛЬТАЦИЮ</button>
+                <button data-modal="consultation" class="button button__header">заказать кОНСУЛЬТАЦИЮ</button>
                 <div class="promo__link">
                     или 
                     <a href="#">ПЕРЕЙТИ В КАТАЛОГ</a>
@@ -302,9 +302,10 @@
 
 
 
+
             <div class="catalog__content between">
                 <div class="catalog-item">
-                    <div class="catalog-item__wrapper">
+                    <div class="catalog-item__wrapper"><!--  -->
                         <div class="catalog-item__content catalog-item__content_active">
                             <img src="https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/42-alu-silver-sport-white-nc-s3-1up_GEO_RU?wid=940&hei=1112&fmt=png-alpha&.v=1594318652000" alt="" class="catalog-item__img">
                         <div class="catalog-item__subtitle">Apple watch 3 series</div>
@@ -428,10 +429,58 @@
     </section>
 
 
+    <footer class="footer">
+        <div class="footer__map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1997.4907694180322!2d30.306436838841883!3d59.95718232029111!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46963141499f00b9%3A0x630ff799025ac60a!2z0KPQvdC40LLQtdGA0YHQuNGC0LXRgiDQmNCi0JzQng!5e0!3m2!1sru!2sru!4v1626438957622!5m2!1sru!2sru" width="100%" height="630" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        <div class="footer__info">
+            <address class="footer__addr">Университет ИТМО, Кронверкский проспект, Санкт-Петербург</address>
+            <a href="tel:84999228974" class="footer__phone">8 (499) 922-89-74</a>
+            <div class="footer__social">
+                <a href="https://vk.com/ii4elkaa" class="footer__link"><img src="img/icons/facebook.svg" alt="" class="footer__icon"></a>
+                <a href="https://www.instagram.com/ii4elka_/" class="footer__link"><img src="img/icons/instagram.svg" alt="" class="footer__icon"></a>
+                <a href="https://vk.com/ii4elkaa" class="footer__link"><img src="img/icons/pinterest.svg" alt="" class="footer__icon"></a>
+            </div>
+        </div>
+    </footer>
+
+    <div class="overlay">
+        <div class="modal" id="consultation">
+            <div class="modal__close">&times;</div>
+            <div class="modal__title">Просто заполните форму заявки</div>
+            <div class="modal__subtitle">и мы перезвоним вам в течении 10 минут</div>
+            <form action="#" class="form form_modal">
+                <input name="text" required placeholder="Ваше имя" type="text">
+                <input name="phone" required placeholder="Ваш телефон" type="number">
+                <input name="mail" required placeholder="Ваш E-mail" type="email">
+                <button class="button button_consult button_modal">заказать кОНСУЛЬТАЦИЮ</button>
+            </form>
+        </div>
+
+        <div class="modal" id="order">
+            <div class="modal__close">&times;</div>
+            <div class="modal__title">Ваш заказ:</div>
+            <div class="modal__subtitle">Пульсометр Polar FT1</div>
+            <form action="#" class="form form_modal">
+                <input name="text" required placeholder="Ваше имя" type="text">
+                <input name="phone" required placeholder="Ваш телефон" type="number">
+                <input name="mail" required placeholder="Ваш E-mail" type="email">
+                <button class="button button_consult button_modal">купить</button>
+            </form>
+        </div>
+
+        <div class="modal modal_mini" id="thanks">
+            <div class="modal__close">&times;</div>
+            <div class="modal__title">Спасибо за вашу заявку!</div>
+            <div class="modal__subtitle">Наш менеджер свяжется с вами <br>в ближайшее время!</div>
+        </div>
+    </div>
 
 
 
-    <script src="siema.min.js"></script>
+
+
+    <script src="js/siema.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="js/script.js"></script>
 </body>
